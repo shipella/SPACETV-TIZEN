@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:tizen="http://tizen.org/ns/widgets"
+        id="https://space-tv.app/tizen24"
+        version="1.0.0"
+        viewmodes="maximized">
+    <name>SPACE TV</name>
+    <icon src="apple-icon.png"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <access origin="*" subdomains="true"/>
+    <tizen:application id="SpcTvApp01.SpaceTV" package="SpcTvApp01" required_version="2.4"/>
+    <tizen:profile name="tv"/>
+    <tizen:setting screen-orientation="landscape"
+                   context-menu="enable"
+                   background-support="disable"
+                   encryption="disable"
+                   install-location="auto"
+                   hwkey-event="enable"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:metadata key="http://samsung.com/tv/metadata/prelaunch.support" value="false"/>
+    <description>SPACE TV full app export for Samsung Smart TV with Tizen 2.4 compatibility mode, 4K-ready layout, and remote navigation bootstrap.</description>
+    <author href="https://space-tv.app">Brian Shipella</author>
+    <license href="https://opensource.org/licenses/MIT">MIT</license>
+</widget>

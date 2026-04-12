@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="Abstract black wallpaper with thin vertical lines">
+  <rect width="1920" height="1080" fill="#000000"/>
+  <g stroke-linecap="round">
+    <g stroke="#4b4f57" opacity="0.55" stroke-width="2">
+      <path d="M68 262V1080"/>
+      <path d="M101 336V1080"/>
+      <path d="M142 302V1080"/>
+      <path d="M189 420V1080"/>
+      <path d="M231 278V1080"/>
+      <path d="M284 356V1080"/>
+      <path d="M336 188V1080"/>
+      <path d="M399 454V1080"/>
+      <path d="M462 318V1080"/>
+      <path d="M520 276V1080"/>
+      <path d="M578 520V1080"/>
+      <path d="M644 334V1080"/>
+      <path d="M702 412V1080"/>
+      <path d="M756 208V1080"/>
+      <path d="M816 360V1080"/>
+      <path d="M868 286V1080"/>
+      <path d="M918 504V1080"/>
+      <path d="M978 230V1080"/>
+      <path d="M1028 412V1080"/>
+      <path d="M1089 334V1080"/>
+      <path d="M1142 246V1080"/>
+      <path d="M1190 384V1080"/>
+      <path d="M1244 214V1080"/>
+      <path d="M1300 286V1080"/>
+      <path d="M1354 392V1080"/>
+      <path d="M1408 238V1080"/>
+      <path d="M1465 432V1080"/>
+      <path d="M1522 266V1080"/>
+      <path d="M1581 356V1080"/>
+      <path d="M1638 298V1080"/>
+      <path d="M1692 474V1080"/>
+      <path d="M1752 330V1080"/>
+      <path d="M1816 284V1080"/>
+      <path d="M1874 370V1080"/>
+    </g>
+    <g stroke="#9ca3af" opacity="0.72" stroke-width="3">
+      <path d="M93 596V1080"/>
+      <path d="M248 518V1080"/>
+      <path d="M407 612V1080"/>
+      <path d="M553 468V1080"/>
+      <path d="M713 576V1080"/>
+      <path d="M865 548V1080"/>
+      <path d="M1019 428V1080"/>
+      <path d="M1174 486V1080"/>
+      <path d="M1331 552V1080"/>
+      <path d="M1488 506V1080"/>
+      <path d="M1646 590V1080"/>
+      <path d="M1798 530V1080"/>
+    </g>
+    <g stroke="#d1d5db" opacity="0.88" stroke-width="4">
+      <path d="M355 146V1080"/>
+      <path d="M618 302V1080"/>
+      <path d="M884 198V1080"/>
+      <path d="M1136 262V1080"/>
+      <path d="M1384 224V1080"/>
+      <path d="M1661 282V1080"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="spacetv-spinner" x1="18" y1="18" x2="102" y2="102" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7edfff"/>
+      <stop offset="1" stop-color="#1d8fff"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="44" stroke="rgba(53,198,255,0.18)" stroke-width="12"/>
+  <path d="M60 16a44 44 0 0 1 38.1 22" stroke="url(#spacetv-spinner)" stroke-linecap="round" stroke-width="12"/>
+  <circle cx="97" cy="39" r="7" fill="#7edfff"/>
+</svg>

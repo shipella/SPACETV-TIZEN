@@ -1,26 +1,42 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    @media (prefers-color-scheme: light) {
-      .background { fill: black; }
-      .foreground { fill: white; }
-    }
-    @media (prefers-color-scheme: dark) {
-      .background { fill: white; }
-      .foreground { fill: black; }
-    }
-  </style>
-  <g clip-path="url(#clip0_7960_43945)">
-    <rect class="background" width="180" height="180" rx="37" />
-    <g style="transform: scale(95%); transform-origin: center">
-      <path class="foreground"
-        d="M101.141 53H136.632C151.023 53 162.689 64.6662 162.689 79.0573V112.904H148.112V79.0573C148.112 78.7105 148.098 78.3662 148.072 78.0251L112.581 112.898C112.701 112.902 112.821 112.904 112.941 112.904H148.112V126.672H112.941C98.5504 126.672 86.5638 114.891 86.5638 100.5V66.7434H101.141V100.5C101.141 101.15 101.191 101.792 101.289 102.422L137.56 66.7816C137.255 66.7563 136.945 66.7434 136.632 66.7434H101.141V53Z" />
-      <path class="foreground"
-        d="M65.2926 124.136L14 66.7372H34.6355L64.7495 100.436V66.7372H80.1365V118.47C80.1365 126.278 70.4953 129.958 65.2926 124.136Z" />
-    </g>
-  </g>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="112" fill="#F8F7F4"/>
+  <path d="M92 306C92 198.894 178.894 112 286 112H337C397.199 112 446 160.801 446 221V332C446 401.036 390.036 457 321 457H183C132.742 457 92 416.258 92 366V306Z" fill="#FF951F"/>
+  <circle cx="78" cy="272" r="34" fill="#FF951F"/>
+  <circle cx="72" cy="404" r="20" fill="#FF951F"/>
+  <circle cx="444" cy="204" r="28" fill="#FF951F"/>
+  <circle cx="470" cy="332" r="18" fill="#FF951F"/>
+  <path d="M192 112L244 192" stroke="#595556" stroke-width="14" stroke-linecap="round"/>
+  <path d="M330 112L278 192" stroke="#595556" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="188" cy="106" r="14" fill="#4A4548"/>
+  <circle cx="334" cy="106" r="14" fill="#4A4548"/>
+  <rect x="108" y="192" width="302" height="228" rx="48" fill="#1E191D"/>
+  <rect x="126" y="210" width="266" height="192" rx="34" fill="#2B2429"/>
+  <rect x="140" y="224" width="188" height="164" rx="26" fill="#5FB0EA"/>
+  <rect x="140" y="224" width="28" height="164" fill="#69B2EA"/>
+  <rect x="168" y="224" width="26" height="164" fill="#D8754D"/>
+  <rect x="194" y="224" width="24" height="164" fill="#F48862"/>
+  <rect x="218" y="224" width="28" height="164" fill="#58B792"/>
+  <rect x="246" y="224" width="24" height="164" fill="#4793D5"/>
+  <rect x="270" y="224" width="26" height="164" fill="#3B63B2"/>
+  <rect x="296" y="224" width="32" height="164" fill="#54429D"/>
+  <ellipse cx="200" cy="294" rx="74" ry="88" fill="url(#shine)" opacity="0.44"/>
+  <ellipse cx="286" cy="300" rx="58" ry="76" fill="url(#shadow)" opacity="0.26"/>
+  <ellipse cx="360" cy="302" rx="24" ry="72" fill="#6A6768"/>
+  <path d="M348 244C358.667 244 371.333 244 386 244C388.209 244 390 245.791 390 248V356C390 358.209 388.209 360 386 360H348V244Z" fill="url(#grill)"/>
+  <circle cx="356" cy="362" r="18" fill="#AAA8AA"/>
+  <circle cx="352" cy="358" r="4" fill="#F5F4F2" opacity="0.72"/>
   <defs>
-    <clipPath id="clip0_7960_43945">
-      <rect width="180" height="180" fill="white" />
-    </clipPath>
+    <linearGradient id="shine" x1="126" y1="200" x2="246" y2="370" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="shadow" x1="286" y1="224" x2="286" y2="376" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="grill" x1="348" y1="244" x2="390" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8C8B8E"/>
+      <stop offset="1" stop-color="#5B585A"/>
+    </linearGradient>
   </defs>
 </svg>

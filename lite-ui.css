@@ -17,10 +17,19 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "CorpticDemoRegular";
+  src: url("FONTS/CorpticdemoRegular-Yqrp4.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background:
-    radial-gradient(circle at top right, rgba(58, 120, 186, 0.26), transparent 34%),
-    linear-gradient(180deg, #0a1830 0%, #061321 52%, #040c18 100%);
+    radial-gradient(circle at 50% -8%, rgba(116, 214, 255, 0.32), transparent 24%),
+    radial-gradient(circle at 50% 0%, rgba(39, 104, 198, 0.28), transparent 38%),
+    radial-gradient(circle at top right, rgba(58, 120, 186, 0.18), transparent 34%),
+    linear-gradient(180deg, #102848 0%, #091626 30%, #050b14 100%);
 }
 
 .boot-splash {
@@ -59,10 +68,10 @@ body {
 .boot-splash-title {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -56%);
+  top: 39%;
+  transform: translate(-50%, -50%);
   color: #ffffff;
-  font-family: "FoundationOne", Arial, Helvetica, sans-serif;
+  font-family: "CorpticDemoRegular", Arial, Helvetica, sans-serif;
   font-size: 126px;
   letter-spacing: 0.08em;
   text-shadow: 0 0 22px rgba(83, 215, 255, 0.35), 0 0 48px rgba(83, 215, 255, 0.28), 0 0 82px rgba(83, 215, 255, 0.18);
@@ -75,7 +84,7 @@ body {
   bottom: 40px;
   transform: translateX(-50%);
   color: rgba(255, 255, 255, 0.72);
-  font-family: "FoundationOne", Arial, Helvetica, sans-serif;
+  font-family: "CorpticDemoRegular", Arial, Helvetica, sans-serif;
   font-size: 22px;
   letter-spacing: 0.18em;
   text-shadow: 0 0 18px rgba(83, 215, 255, 0.14);
@@ -431,7 +440,7 @@ select {
 .tile {
   position: relative;
   width: 230px;
-  height: 340px;
+  height: 345px;
   overflow: hidden;
   border-radius: 24px;
   background: #111b2d;
@@ -444,6 +453,7 @@ select {
 .tile:focus {
   background: #17243b;
   transform: translateY(-4px);
+  box-shadow: 0 26px 50px rgba(0, 0, 0, 0.36), 0 0 30px rgba(53, 198, 255, 0.16);
 }
 
 .tile-img {
@@ -543,6 +553,7 @@ select {
 .channel-item:focus {
   background: rgba(255, 255, 255, 0.11);
   transform: translateY(-3px);
+  box-shadow: 0 24px 44px rgba(0, 0, 0, 0.34), 0 0 28px rgba(53, 198, 255, 0.12);
 }
 
 .channel-logo {
@@ -607,7 +618,7 @@ select {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(5, 13, 24, 0.02) 0%, rgba(5, 13, 24, 0.18) 28%, rgba(5, 13, 24, 0.56) 58%, rgba(5, 13, 24, 0.96) 82%, rgba(5, 13, 24, 1) 100%);
+  background: linear-gradient(180deg, rgba(20, 60, 135, 0.18) 0%, rgba(5, 13, 24, 0.06) 12%, rgba(5, 13, 24, 0.30) 35%, rgba(5, 13, 24, 0.70) 60%, rgba(5, 13, 24, 0.96) 82%, rgba(5, 13, 24, 1) 100%);
 }
 
 .detail-content {
@@ -699,41 +710,35 @@ select {
 .fav-btn {
   display: inline-block;
   margin: 0;
-  padding: 15px 28px;
-  border: none;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.12);
+  padding: 0;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
   color: #ffffff;
   cursor: pointer;
-  font-size: 16px;
+  width: 48px;
+  height: 48px;
+  font-size: 0;
   font-weight: bold;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  transition: transform 0.18s ease, background 0.18s ease;
+  transition: transform 0.18s ease, background 0.18s ease, border-color 0.18s ease;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .fav-icon-wrap {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  vertical-align: middle;
   color: #35c6ff;
-}
-
-.fav-icon-wrap svg {
-  width: 20px;
-  height: 20px;
-}
-
-.fav-label {
-  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 48px;
+  height: 48px;
   vertical-align: middle;
 }
 
 .fav-btn.active {
-  color: #7ed9ff;
-  background: rgba(53, 198, 255, 0.16);
+  color: #e50914;
+  border-color: #e50914;
+  background: rgba(229, 9, 20, 0.15);
 }
 
 .detail-actions {
@@ -743,10 +748,15 @@ select {
   margin: 12px 0 20px;
 }
 
-.detail-actions .btn,
-.detail-actions .fav-btn {
+.detail-actions .btn {
   min-width: 220px;
   text-align: center;
+}
+.detail-actions .fav-btn {
+  width: 48px;
+  height: 48px;
+  min-width: 0;
+  padding: 0;
 }
 
 .back-btn {
@@ -798,6 +808,8 @@ select {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.08);
   object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .cast-name {
@@ -807,17 +819,53 @@ select {
 }
 
 .season-selector {
+  position: relative;
   margin: 22px 0 14px;
+}
+
+.season-buttons-shell {
+  position: relative;
+}
+
+.season-buttons-shell::before,
+.season-buttons-shell::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 8px;
+  width: 36px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.season-buttons-shell::before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(5, 13, 24, 1) 0%, rgba(5, 13, 24, 0) 100%);
+}
+
+.season-buttons-shell::after {
+  right: 0;
+  background: linear-gradient(270deg, rgba(5, 13, 24, 1) 0%, rgba(5, 13, 24, 0) 100%);
 }
 
 .season-buttons {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 10px;
   margin-top: 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0 24px 8px;
+  white-space: nowrap;
+}
+
+.season-buttons::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .season-btn {
+  flex: 0 0 auto;
   padding: 12px 18px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
@@ -849,10 +897,10 @@ select {
 .episode-item {
   display: flex;
   align-items: center;
-  padding: 17px 20px;
+  padding: 16px 18px;
   margin-bottom: 10px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.05);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
   cursor: pointer;
   transition: transform 0.18s ease, background 0.18s ease;
 }
@@ -927,7 +975,7 @@ select {
 
 .browse-grid .tile {
   width: 230px;
-  height: 340px;
+  height: 345px;
 }
 
 .browse-actions {
@@ -944,19 +992,21 @@ select {
 }
 
 .similar-item {
+  position: relative;
   width: 190px;
   overflow: hidden;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.06);
+  background: #111b2d;
   cursor: pointer;
   flex-shrink: 0;
-  transition: transform 0.18s ease, background 0.18s ease;
+  transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
 }
 
 .similar-item:hover,
 .similar-item:focus {
-  background: rgba(255, 255, 255, 0.11);
-  transform: translateY(-3px);
+  background: #17243b;
+  transform: translateY(-4px);
+  box-shadow: 0 26px 50px rgba(0, 0, 0, 0.36), 0 0 30px rgba(53, 198, 255, 0.16);
 }
 
 .similar-img {
@@ -966,10 +1016,15 @@ select {
 }
 
 .similar-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   margin: 0;
-  padding: 12px;
+  padding: 14px 12px 12px;
   color: #ffffff;
   font-size: 13px;
+  background: linear-gradient(180deg, rgba(4, 9, 17, 0.04) 0%, rgba(4, 9, 17, 0.92) 100%);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1095,7 +1150,12 @@ select {
 }
 
 .loading {
-  padding: 100px 20px;
+  min-height: calc(100vh - 220px);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: rgba(255, 255, 255, 0.6);
   font-size: 20px;
   text-align: center;
@@ -1325,10 +1385,16 @@ html.tizen-tv-export .settings-row .toggle-switch {
 html.tizen-tv-export .tile-row,
 html.tizen-tv-export .cast-list,
 html.tizen-tv-export .similar-row,
-html.tizen-tv-export .season-buttons,
 html.tizen-tv-export .detail-actions {
   display: block;
   white-space: nowrap;
+}
+
+html.tizen-tv-export .season-buttons {
+  display: flex;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 html.tizen-tv-export .tile-row .tile,
@@ -1349,6 +1415,12 @@ html.tizen-tv-export .similar-row .similar-item {
 
 html.tizen-tv-export .cast-list .cast-item {
   margin-right: 18px;
+}
+
+html.tizen-tv-export .cast-img {
+  display: block;
+  object-fit: cover;
+  object-position: center top;
 }
 
 html.tizen-tv-export .season-buttons .season-btn,
@@ -1440,6 +1512,7 @@ body.tv-4k .nav-container {
 
 body.tv-4k .boot-splash-title {
   font-size: 178px;
+  top: 37%;
 }
 
 body.tv-4k .boot-splash-credit {
@@ -1535,7 +1608,7 @@ body.tv-4k .section-more {
 
 body.tv-4k .tile {
   width: 290px;
-  height: 430px;
+  height: 435px;
   border-radius: 28px;
 }
 
@@ -1616,6 +1689,11 @@ body.tv-4k .cast-img {
   height: 122px;
 }
 
+body.tv-4k .season-buttons-shell::before,
+body.tv-4k .season-buttons-shell::after {
+  width: 48px;
+}
+
 body.tv-4k .cast-section h3,
 body.tv-4k .similar-section h3 {
   font-size: 34px;
@@ -1645,6 +1723,7 @@ body.tv-4k .episode-thumb {
 
 body.tv-4k .similar-item {
   width: 260px;
+  border-radius: 28px;
 }
 
 body.tv-4k .similar-img {
@@ -1653,6 +1732,7 @@ body.tv-4k .similar-img {
 
 body.tv-4k .similar-title {
   font-size: 20px;
+  padding: 18px 16px 16px;
 }
 
 body.tv-4k .settings-row {
@@ -1672,10 +1752,8 @@ body.tv-4k .toast {
   font-size: 20px;
 }
 
-body.tv-4k .fav-icon-wrap,
-body.tv-4k .fav-icon-wrap svg {
-  width: 24px;
-  height: 24px;
+body.tv-4k .fav-icon-wrap {
+  font-size: 28px;
 }
 
 body.tv-4k .settings-copy {
@@ -1712,7 +1790,7 @@ body.tv-4k .browse-grid {
 
 body.tv-4k .browse-grid .tile {
   width: 290px;
-  height: 430px;
+  height: 435px;
 }
 
 body.tv-4k .browse-actions {
@@ -1735,12 +1813,24 @@ body.tv-4k .back-btn {
 }
 
 body.tv-4k .fav-btn {
-  padding: 20px 34px;
-  font-size: 22px;
+  width: 56px;
+  height: 56px;
+  font-size: 0;
 }
 
-body.tv-4k .detail-actions .btn,
-body.tv-4k .detail-actions .fav-btn {
+body.tv-4k .fav-icon-wrap {
+  font-size: 26px;
+  line-height: 56px;
+  height: 56px;
+}
+
+body.tv-4k .detail-actions .btn {
   min-width: 290px;
+}
+
+body.tv-4k .detail-actions .fav-btn {
+  width: 56px;
+  height: 56px;
+  min-width: 0;
 }
 }

@@ -1,0 +1,9 @@
+{
+  "name": "vidking-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.18.0",
+    "playwright": "^1.60.0"
+  }
+}

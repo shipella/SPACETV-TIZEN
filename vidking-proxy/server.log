@@ -1,0 +1,2 @@
+VidKing resolver running on http://localhost:3456
+Usage: http://localhost:3456/resolve?tmdb=550

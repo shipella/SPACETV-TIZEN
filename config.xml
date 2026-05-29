@@ -5,7 +5,7 @@
         version="1.0.0"
         viewmodes="maximized">
     <name>SPACE TV</name>
-    <icon src="apple-icon.png"/>
+    <icon src="icon.png"/>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <access origin="*" subdomains="true"/>
@@ -18,9 +18,17 @@
                    install-location="auto"
                    hwkey-event="enable"/>
     <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/avplay"/>
     <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
     <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.window"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.audio"/>
     <tizen:metadata key="http://samsung.com/tv/metadata/prelaunch.support" value="false"/>
+    <tizen:metadata key="http://samsung.com/tv/metadata/use.preview" value="endpoint_URL=https://space-tv-stream-gateway.bshipella.workers.dev/preview"></tizen:metadata>
+    <tizen:app-control>
+        <tizen:src name="index.html" reload="disable"></tizen:src>
+        <tizen:operation name="http://samsung.com/appcontrol/operation/eden_resume"></tizen:operation>
+    </tizen:app-control>
     <description>SPACE TV full app export for Samsung Smart TV with Tizen 2.4 compatibility mode, 4K-ready layout, and remote navigation bootstrap.</description>
     <author href="https://space-tv.app">Brian Shipella</author>
     <license href="https://opensource.org/licenses/MIT">MIT</license>

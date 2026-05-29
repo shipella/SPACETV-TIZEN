@@ -7,13 +7,21 @@
   <title>SPACE TV</title>
   <link rel="stylesheet" href="lite-ui.css">
   <script src="./legacy-polyfills.js"></script>
+  <script type="text/javascript" src="$WEBAPIS/webapis/webapis.js"></script>
   <script src="./tizen-bootstrap.js"></script>
+
+  <!-- Unified Playback Architecture -->
+  <script src="./src/player/avplayAdapter.js"></script>
+  <script src="./src/player/bitmovinAdapter.js"></script>
+  <script src="./src/player/playbackManager.js"></script>
+  <script src="./src/services/vidking/streamResolver.js"></script>
+  <script src="./src/debug/player-debug-overlay.js"></script>
 </head>
 <body>
   <div id="boot-splash" class="boot-splash">
     <div class="boot-splash-bg"></div>
     <div class="boot-splash-inner">
-      <div class="boot-splash-title">SPACE TV</div>
+      <div class="boot-splash-title">SpaceTV</div>
       <div class="boot-splash-credit">designed by Brian Shipella</div>
     </div>
   </div>
